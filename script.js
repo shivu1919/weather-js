@@ -7,7 +7,7 @@ function checkTemp(){
     const windspeed = document.getElementById('windspeed')
     const humidity = document.getElementById('humidity')
 
-    fetch(`http://api.weatherapi.com/v1/current.json?key=412b492bf8de4497ae193119252801&q=${city}`)
+    fetch(`http://api.weatherapi.com/v1/current.json?key=YOUR-API-KEY&q=${city}`)
     .then((response)=> response.json())
     .then((data)=>{
         cityname.innerHTML=city;
